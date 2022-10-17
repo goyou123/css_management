@@ -38,5 +38,14 @@ module.exports = {
         'no-unused-vars': 'warn', //안쓰는 변수 경고
         '@typescript-eslint/explicit-function-return-type': 'off',
         '@typescript-eslint/no-floating-promises': 'off',
+        'prettier/prettier': [
+            //  End Line Sequnce 자동으로 설정
+            'error',
+            {
+                endOfLine: 'auto',
+            },
+        ],
+        '@typescript-eslint/array-type': 'off', // 배열 정의 유형
+        '@typescript-eslint/strict-boolean-expressions': 'off', // boolean 값 정의 편하게 사용
     },
 }
