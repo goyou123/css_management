@@ -31,6 +31,19 @@ declare module 'styled-components' {
             lightRed: string
             lightGreen: string
             bubbleBg: string
+            inputStroke: string
+            subButtonBg: string
+            clusterSumPanelBg: string
+            subGray: string
+            transBorder: string
+            transBg: string
+            bookmark: string
+            sitePanelStroke: string
+            activeButton: string
+            transText: string
+            tableBorder: string
+            checkboxBg: string
+            horizonbarBg: string
         }
 
         fonts: {

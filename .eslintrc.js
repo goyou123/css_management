@@ -28,13 +28,20 @@ module.exports = {
     rules: {
         'arrow-body-style': 'off',
         'prefer-arrow-callback': 'off',
+
         'react/jsx-filename-extension': [
             'warn',
             {
                 extensions: ['.js', '.jsx', '.ts', '.tsx'],
             },
         ],
-        'prettier/prettier': 'error', // 프리티어 설정
+        'prettier/prettier': [
+            'error',
+            {
+                singleQuote: true,
+                parser: 'flow',
+            },
+        ], // 프리티어 설정
         'no-unused-vars': 'warn', //안쓰는 변수 경고
         '@typescript-eslint/explicit-function-return-type': 'off',
         '@typescript-eslint/no-floating-promises': 'off',
@@ -47,5 +54,8 @@ module.exports = {
         ],
         '@typescript-eslint/array-type': 'off', // 배열 정의 유형
         '@typescript-eslint/strict-boolean-expressions': 'off', // boolean 값 정의 편하게 사용
+        '@typescript-eslint/no-misused-promises': 'off',
+        '@typescript-eslint/naming-convention': 'off', // 네이밍 쉽게
+        '@typescript-eslint/ban-types': 'off', //
     },
 }

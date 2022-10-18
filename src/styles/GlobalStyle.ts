@@ -131,9 +131,41 @@ img {
     display: block;
 }
 
+
+
+ /* 스크롤바 설정*/
+ *::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    /* 스크롤바 막대 설정*/
+    *::-webkit-scrollbar-thumb {
+        height: 17%;
+        background: #aaaaaa;
+        opacity: 0.32;
+        /* 스크롤바 둥글게 설정    */
+        border-radius: 10px;
+    }
+
+    /* 스크롤바 뒷 배경 설정*/
+    *::-webkit-scrollbar-track {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+
+
+
+
+
+
+
+
+
+
 html,
 body {
     height: 100%;
+    min-height : 100vh;
 }
 
 button{
@@ -150,6 +182,7 @@ button{
 
 html {
     font-size: 62.5%;
+    height: 100%;
 }
 a {color: #fff; text-decoration: none; outline: none}
 a:hover, a:active {text-decoration: none; color:#fff; }

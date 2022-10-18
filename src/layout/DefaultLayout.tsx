@@ -1,12 +1,10 @@
 import React from 'react'
 import MainRouter, { ROUTES } from 'routes/MainRouter'
-
 import { ThemeProvider } from 'styled-components'
 import { lightTheme, darkTheme } from 'styles/theme'
 import GlobalStyle from 'styles/GlobalStyle'
-
 import { useDarkMode } from 'hooks/useDarkMode'
-import { MainLayoutDiv, InnerLayoutDiv } from './DefaultLayout.style'
+import { MainLayoutDiv } from './DefaultLayout.style'
 import Sidebar from './Sidebar/Sidebar'
 
 function DefaultLayout() {
@@ -17,10 +15,8 @@ function DefaultLayout() {
         <ThemeProvider theme={theme}>
             <GlobalStyle />
             <MainLayoutDiv>
-                <InnerLayoutDiv>
-                    <Sidebar routes={ROUTES} themeMode={themeMode} toggleTheme={toggleTheme} />
-                    <MainRouter theme={theme} />
-                </InnerLayoutDiv>
+                <Sidebar routes={ROUTES} themeMode={themeMode} toggleTheme={toggleTheme} />
+                <MainRouter />
             </MainLayoutDiv>
         </ThemeProvider>
     )

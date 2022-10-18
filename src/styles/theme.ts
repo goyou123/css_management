@@ -51,6 +51,17 @@ const onlyLight = {
     subBorder: 'rgba(255,255,255,0.12)', // 타임라인 안에 있는 border
     bubbleBg: '#e2e2e2', // 대쉬보드 지도 변경 시 말풍선 배경색
     white: '#333333',
+    inputStroke: '#0000001F', // 클러스터 선택 팝업 검색창 테두리 색
+    subButtonBg: 'rgb(0 0 0 / 8%)', // 대쉬보드 클러스터썸 적용하기 버튼 배경 색 // FFFFFF52
+    subGray: '#666666', // 마커 팝업 클러스터 이름 색
+    transBorder: '#0000001F', // 상세페이지 내부 T 자 border 색 ffffff36
+    transBg: '#FFFFFF8A', // 상세페이지 사이트 패널 이미지 위에 깔리는 색
+    bookmark: '#DDDDDDD', // 북마크 기본 색
+    sitePanelStroke: '#00B794', // 상세페이지 사이트 선택 테두리 색
+    transText: '#666666', // 테이블 텍스트 색
+    tableBorder: '#00000012',
+    checkboxBg: '#333333',
+    horizonbarBg: 'rgba(255, 255, 255, 0.43);',
 }
 
 /* 다크모드에서만 사용되는 color 정의 */
@@ -70,6 +81,17 @@ const onlyDark = {
     subBorder: 'rgba(255,255,255,0.12)', // 타임라인 안에 있는 border
     bubbleBg: '#222222', // 대쉬보드 지도 변경 시 말풍선 배경색
     white: '#ffffff',
+    inputStroke: '#FFFFFF1F',
+    subButtonBg: '#AAAAAA52',
+    subGray: '#AAAAAA', // 마커 팝업 클러스터 이름 색
+    transBorder: '#ffffff36', // 상세페이지 내부 T 자 border 색
+    transBg: '#1111119A', // 상세페이지 사이트 패널 이미지 위에 깔리는 색
+    bookmark: '#777777', // 북마크 기본 색
+    sitePanelStroke: 'rgba(255,255,255,0.6)', // 상세페이지 사이트 선택 테두리 색
+    transText: '#ffffff99',
+    tableBorder: '#ffffff12',
+    checkboxBg: '#aaaaaa',
+    horizonbarBg: 'rgba(255, 255, 255, 0.12);',
 }
 
 /* 최종 라이트모드에서 사용되는 컬러 정의 */

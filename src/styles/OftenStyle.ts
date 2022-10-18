@@ -15,6 +15,12 @@ export const flexCenterSpaceBetween = css`
     justify-content: space-between;
 `
 
+export const flexColumSpaceBetween = css`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+`
+
 /* 대쉬보드 패널,버튼들에 들어가는 배경 색 */
 export const mainBackground = css`
     ${({ theme }) => {
@@ -24,6 +30,16 @@ export const mainBackground = css`
             box-shadow: ${mainStyle.mainShadow};
             backdrop-filter: ${mainStyle.mainFilter};
             border-radius: ${mainStyle.mainRadius};
+        `
+    }}
+`
+/* template 단위에서 공통으로 들어가는 배경 */
+export const templateBackground = css`
+    ${({ theme }) => {
+        const { colors } = theme
+        return css`
+            background: center/cover url(${colors.BACKGOUND});
+            height: 100vh;
         `
     }}
 `
