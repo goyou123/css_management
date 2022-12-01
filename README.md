@@ -111,5 +111,3 @@
 <br><br><br>
 
 
-# Redux-thunk
-> Redux를 활용하여 상태관리를 하고, redux-thunk 미들웨어를 사용하여 API 함수를 
