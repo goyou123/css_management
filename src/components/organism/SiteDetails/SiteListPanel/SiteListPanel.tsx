@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import { SiteListPanelDiv } from 'components/organism/SiteDetails/SiteListPanel/SiteListPanel.style'
 import { ReactComponent as Icon3x3 } from 'assets/images/icon_3x3_button.svg'
 import { ReactComponent as Icon2x2 } from 'assets/images/icon_2x2_button.svg'
@@ -20,7 +20,6 @@ function SiteListPanel({ selectSiteId, _setSelectSiteId }: Iprops) {
     const [gridStyle, _setGridStyle] = useState(true) // true일때 기본 3x3 : 이미지 없는 버전
     const siteArrayBeforeReverse = data ? [...data.sites_detail[0].sites, ...data.sites_detail[1].sites] : []
     const totalSiteArray = [...siteArrayBeforeReverse].reverse() // error 가 있는 사이트들이 리스트 앞쪽에 오도록 순서 변경해줌
-
     // 초기 값 세팅 - 최초 1회 실행
     useEffect(() => {
         if (data && selectSiteId === '' && totalSiteArray.length !== 0) {

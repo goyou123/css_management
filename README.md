@@ -16,8 +16,36 @@
 <br><br><br>
 
 ## 폴더 구조 
+1. api
+    * api 모음 (더미데이터 return하는 형식으로 진행)
+2. asset
+    * 이미지 모음
+3. components
+    * 재활용되는 컴포넌트 모음 (아토믹 디자인 패턴)
+    * atoms / mocules / organism 으로 구분
+4. constant
+    * 사용되는 객체들의 type 모음 
+5. dummyData
+    * 더미데이터
+6. hooks
+    * custom hook 모음
+7. layout
+    * 기본 레이아웃, 사이드바 관리
+8. lib 
+    * 유틸 함수 모음
+9. pages 
+    * 최종 페이지 컴포넌트 (아토믹 디자인 패턴)
+10. templates
+    * page를 구성하는 컴포넌트 (아토믹 디자인 패턴)
+11. routes 
+    * 라우팅 관리
+12. store 
+    * redux 관련 코드 모음
+13. styles 
+    * css 관리 코드 모음 
+    
 
-
+<br><br><br>
 
 
 # CSS 관리 방법 

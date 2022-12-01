@@ -1,6 +1,5 @@
 import React from 'react'
 import MainPage from 'pages/MainPage'
-// import SubPage from 'pages/SubPage'
 import SiteDatailsPage from 'pages/SiteDetailsPage'
 
 import ErrorPage from 'pages/ErrorPage'
@@ -11,19 +10,11 @@ export interface RouteType {
     path: string
 }
 
-// TODO : 메뉴에 세부 메뉴 있을때는 어떻게 ?
 export const ROUTES: RouteType[] = [
     {
-        name: '메인',
-        path: '/main',
-    },
-    // {
-    //     name: '서브',
-    //     path: '/sub',
-    // },
-    {
-        name: '상세',
-        path: '/site-details',
+        name: '예시',
+        // path: '/site-details',
+        path: '/',
     },
 ]
 
@@ -31,9 +22,9 @@ function MainRouter() {
     return (
         <Routes>
             <Route path="*" element={<ErrorPage />} />
-            <Route path="/main" element={<MainPage />} />
-            {/* <Route path="/sub" element={<SubPage />} /> */}
-            <Route path="/site-details" element={<SiteDatailsPage />} />
+            <Route path="/" element={<SiteDatailsPage />} />
+            {/* <Route path="/main" element={<MainPage />} /> */}
+            {/* <Route path="/site-details" element={<SiteDatailsPage />} /> */}
         </Routes>
     )
 }

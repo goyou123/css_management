@@ -11,8 +11,7 @@ export const createPromiseThunk = (type: string, promiseCreator: Function) => {
             try {
                 const payload: any = await promiseCreator(params)
                 const { data } = payload
-                console.log(payload)
-                console.log(data)
+
                 dispatch({
                     type: SUCCESS,
                     payload: data,

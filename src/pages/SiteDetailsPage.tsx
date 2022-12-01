@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { readRealTimeSite, readSitesDetail } from 'store/actions/siteDetails'
-import { getLocalStorage } from 'lib/utils'
 import SiteDetailsTemplate from 'templates/SiteDetails/SiteDetailsTemplate'
 
 function SiteDatailsPage() {
@@ -13,31 +12,12 @@ function SiteDatailsPage() {
         dispatch(readSitesDetail())
     }, [])
 
-    /** 기존 1분마다 데이터 업데이트 하는 코드(생략) */
-    // useEffect(() => {
-    //     const checkedIds = getLocalStorage('SELECT_CLUSTER')
-
-    //     let timer: ReturnType<typeof setTimeout>
-    //     const init = async () => {
-    //         if (selectSiteId !== '') {
-    //             // dispatch(readRealTimeSite(selectSiteId))
-    //             dispatch(readSitesDetail())
-    //         }
-
-    //         timer = setTimeout(init, 60000)
-    //     }
-    //     if (checkedIds) {
-    //         init()
-    //     }
-
-    //     return () => {
-    //         clearTimeout(timer)
-    //     }
-    // }, [dispatch, clusterIds])
-
-    // useEffect(() => {
-    //     if (selectSiteId !== '') dispatch(readRealTimeSite(selectSiteId))
-    // }, [selectSiteId])
+    useEffect(() => {
+        // console.log('변경된 사이트 아이디 : ', selectSiteId)
+        if (selectSiteId) {
+            dispatch(readRealTimeSite(selectSiteId))
+        }
+    }, [selectSiteId])
 
     return <SiteDetailsTemplate selectSiteId={selectSiteId} _setSelectSiteId={_setSelectSiteId} />
 }

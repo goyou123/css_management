@@ -1,5 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 export default function Error() {
-    return <div>error</div>
+    const navigate = useNavigate()
+
+    const goHome = () => {
+        navigate('/')
+    }
+
+    useEffect(() => {
+        goHome()
+    })
+
+    return <div>erro</div>
 }

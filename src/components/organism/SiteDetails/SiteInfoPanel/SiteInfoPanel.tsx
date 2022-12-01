@@ -9,15 +9,11 @@ function SiteInfoPanel() {
     const { data, loading } = useSelector((state: RootState) => state.siteDetails.realTimeSite)
     return (
         <SiteInfoDiv>
-            TEST
             <h3>{data ? data.site_name : loading}</h3>
             <p className="cluster-name">{data?.clusters[0].cluster_name}</p>
             <div className="panel-list">
                 {data?.subscriptions.map((s, i) => {
-                    if (s.status !== 'NOTUSED') {
-                        return <SiteInfoBox subscriptions={s} key={i} />
-                    }
-                    return null
+                    return <SiteInfoBox subscriptions={s} key={i} />
                 })}
             </div>
         </SiteInfoDiv>

@@ -12,38 +12,20 @@ declare module 'styled-components' {
     export interface DefaultTheme {
         colors: {
             BACKGOUND: ReactComponentElement
-            pageBackGround: string
-            sidebarBg: string
-            sidebarIcon: string
             mainGradientBg: string
+            sidebarBg: string
             site3x3Bg: string
-            panelBg: string
-            bgColor: string
             white: string
-            black: string
             transparent: string
-            test: string
-            btnOpenBorder: string
-            subBorder: string
             mainRed: string
             mainGreen: string
             mainGray: string
-            lightRed: string
-            lightGreen: string
-            bubbleBg: string
             inputStroke: string
-            subButtonBg: string
-            clusterSumPanelBg: string
             subGray: string
             transBorder: string
             transBg: string
             bookmark: string
             sitePanelStroke: string
-            activeButton: string
-            transText: string
-            tableBorder: string
-            checkboxBg: string
-            horizonbarBg: string
         }
 
         fonts: {

@@ -48,12 +48,13 @@ const siteDetails = (state = initialState, action: SiteDetailsActions): SiteDeta
         case READ_SITES_DETAIL:
         case READ_SITES_DETAIL_SUCCESS:
         case READ_SITES_DETAIL_ERROR:
-            console.log(action)
+            // console.log(action)
             return readSitesDetailReducer(state, action)
 
         case READ_REALTIME_SITE:
         case READ_REALTIME_SITE_SUCCESS:
         case READ_REALTIME_SITE_ERROR:
+            // console.log(action)
             return readRealTimeSiteReducer(state, action)
 
         default:

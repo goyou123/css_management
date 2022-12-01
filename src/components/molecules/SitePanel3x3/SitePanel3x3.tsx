@@ -24,7 +24,7 @@ interface Iprops {
 }
 function SitePanel3x3({ data, _setSelectSiteId, selectSiteId }: Iprops) {
     const [isBookmark, _setIsBookmark] = useState<boolean>(false)
-    console.log(data)
+    // console.log(data)
     useEffect(() => {
         if (data) {
             _setIsBookmark(data.is_bookmark)

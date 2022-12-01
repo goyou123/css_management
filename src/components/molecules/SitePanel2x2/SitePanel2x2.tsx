@@ -55,5 +55,5 @@ function SitePanel2x2({ data, _setSelectSiteId, selectSiteId }: Iprops) {
     )
 }
 
-// export default SitePanel2x2
-export default React.memo(SitePanel2x2)
+export default SitePanel2x2
+// export default React.memo(SitePanel2x2)

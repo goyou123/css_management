@@ -1,18 +1,54 @@
 import Send from '.'
-import { res } from 'dummyData/API_REQUEST_DATA'
+import {
+    listData,
+    site1,
+    site2,
+    site3,
+    site4,
+    site5,
+    site6,
+    site7,
+    site8,
+    site9,
+    site10,
+} from 'dummyData/API_REQUEST_DATA'
 
-/* 사이트 실시간 정보 조회 API */
+/** API는 하드코딩으로 대체 */
+
+/* 사이트 실시간 정보 조회 API siteId: string */
 export const getRealTimeSitesData = async (siteId: string) => {
     // const res = await Send.get(`/cems/sites/${siteId}`)
-    // // console.log(res.data)
-    // return res
+    switch (siteId) {
+        case '000000001':
+            return site1
+        case '000000002':
+            return site2
+        case '000000003':
+            return site3
+        case '000000004':
+            return site4
+        case '000000005':
+            return site5
+        case '000000006':
+            return site6
+        case '000000007':
+            return site7
+        case '000000008':
+            return site8
+        case '000000009':
+            return site9
+        case '000000010':
+            return site10
+
+        default:
+            return site1
+    }
 }
 
 /* 사이트 목록 조회 API
  * - 더미데이터를 return하는 형태로 수정
  */
 export const getSitesDetail = async () => {
-    // console.log(cluster_ids)
     // const res = await Send.post('/cems/sites', {
     //     cluster_ids,
     // })
@@ -21,7 +57,7 @@ export const getSitesDetail = async () => {
 
     // return res
 
-    return res
+    return listData
 }
 
 /* 즐겨찾기 API (토글형태 ) 생략 */
